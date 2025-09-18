@@ -63,6 +63,13 @@ header {
   margin-top: 20px;
 }
 
+.chanel-info {
+  display: flex;
+  align-items: center;  /* centraliza verticalmente foto e texto */
+  gap: 10px;
+  margin-top: 10px;
+}
+
 
 .chanel-info .name {
   font-family: 'Roboto', sans-serif;
@@ -71,4 +78,59 @@ header {
   font-size: 14px;
   line-height: 100%;       /* equivalente a 14px */
   letter-spacing: 0;       /* sem espaçamento extra */
+  margin: 0 0 2px 0;
 }
+
+.chanel-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente em relação à foto */
+  margin-top: 8px
+}
+
+.chanel-info .subscriber {
+  font-size: 13px;
+  color: #606060;   /* cor mais clara para ficar parecido com o YouTube */
+  margin-top: 0;
+}
+
+.chanel-info .subscribe {
+  background-color: red;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 14px;
+  height: 40px;
+  width: 159px;
+  border: none;
+  text-align: center;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center;     /* centraliza vertical */
+  padding: 12px 24px;
+  margin-left: 10px;
+}
+
+.botoes {
+    display: flex;       /* deixa os botões lado a lado */
+    gap: 10px;           /* espaçamento entre eles */
+}
+
+.like-button, .deslike-button, .share-button, .download-button {
+    display: flex;          /* coloca imagem e texto lado a lado */
+    align-items: center;    /* centraliza verticalmente */
+    gap: 5px;               /* espaçamento entre imagem e texto */
+    padding: 5px 10px;      /* espaço interno do botão */
+    border: none;           /* remove a borda padrão */
+    background-color: #FFF; /* cor de fundo do botão */
+    cursor: pointer;        /* muda o cursor ao passar por cima */
+}
+
+.botoes .info {
+    margin: 0;              /* remove margem padrão do <p> */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;       /* SemiBold */
+    font-style: normal;     /* não existe 'SemiBold' aqui */
+    font-size: 14px;
+    line-height: 1;         /* equivalente a 100% */
+    letter-spacing: 0;
+}
+
