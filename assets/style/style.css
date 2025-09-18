@@ -22,7 +22,8 @@ header {
 
 .input-container {
   position: relative;
-  width: 550px; /* largura da barra central */
+  width: 404px; /* largura da barra central */
+  margin-right: 150px;
 }
 
 .input-container input {
@@ -107,6 +108,8 @@ header {
   align-items: center;     /* centraliza vertical */
   padding: 12px 24px;
   margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .botoes {
@@ -134,3 +137,19 @@ header {
     letter-spacing: 0;
 }
 
+.info-video {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.descricao-video {
+  width: 50%;
+}
+
+.descricao-video p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #515151;
+}
