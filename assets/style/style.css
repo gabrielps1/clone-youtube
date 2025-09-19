@@ -3,153 +3,193 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Nata+Sans:wght@100..900&family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 header {
-  background-color: #fff;
-  padding: 10px 20px;
+background-color: #fff;
+padding: 10px 20px;
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* faz a esquerda, o input e a direita ocuparem toda a largura */
-  width: 100%; /* ocupa toda a largura da tela */
+display: flex;
+align-items: center;
+justify-content: space-between; /* faz a esquerda, o input e a direita ocuparem toda a largura /
+width: 100%; / ocupa toda a largura da tela */
 }
 
 .icon-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+display: flex;
+align-items: center;
+gap: 10px;
 }
 
 .input-container {
-  position: relative;
-  width: 404px; /* largura da barra central */
-  margin-right: 150px;
+position: relative;
+width: 404px; /* largura da barra central */
+margin-right: 150px;
 }
 
 .input-container input {
-  width: 100%;
-  padding: 6px 30px 6px 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 2px;
+width: 100%;
+padding: 6px 30px 6px 10px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 2px;
 }
 
 .input-container .search-icon {
-  position: absolute;
-  right: -25px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  pointer-events: none;
+position: absolute;
+right: -25px;
+top: 50%;
+transform: translateY(-50%);
+width: 20px;
+height: 20px;
+pointer-events: none;
 }
 
 .icon-right {
-  display: flex;
-  align-items: center;
-  gap: 10px; 
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+main {
+margin: 20px;
 }
 
 .content-main > p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;        /* SemiBold */
-  font-style: normal;
-  font-size: 18px;
-  line-height: 100%;       /* equivalente a 20px */
-  letter-spacing: 0;
+font-family: 'Roboto', sans-serif;
+font-weight: 600;        /* SemiBold /
+font-style: normal;
+font-size: 18px;
+line-height: 100%;       / equivalente a 20px */
+letter-spacing: 0;
 }
 
 .content-main {
-  margin-left: 30px;
-  margin-top: 20px;
+flex: 1;
 }
 
 .chanel-info {
-  display: flex;
-  align-items: center;  /* centraliza verticalmente foto e texto */
-  gap: 10px;
-  margin-top: 10px;
+display: flex;
+align-items: center;  /* centraliza verticalmente foto e texto */
+gap: 10px;
+margin-top: 10px;
 }
 
-
 .chanel-info .name {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;        /* SemiBold */
-  font-style: normal;
-  font-size: 14px;
-  line-height: 100%;       /* equivalente a 14px */
-  letter-spacing: 0;       /* sem espaçamento extra */
-  margin: 0 0 2px 0;
+font-family: 'Roboto', sans-serif;
+font-weight: 600;        /* SemiBold /
+font-style: normal;
+font-size: 14px;
+line-height: 100%;       / equivalente a 14px /
+letter-spacing: 0;       / sem espaçamento extra */
+margin: 0 0 2px 0;
 }
 
 .chanel-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* centraliza verticalmente em relação à foto */
-  margin-top: 8px
+display: flex;
+flex-direction: column;
+justify-content: center; /* centraliza verticalmente em relação à foto */
+
 }
 
 .chanel-info .subscriber {
-  font-size: 13px;
-  color: #606060;   /* cor mais clara para ficar parecido com o YouTube */
-  margin-top: 0;
+font-size: 13px;
+color: #606060;   /* cor mais clara para ficar parecido com o YouTube */
+margin-top: 0;
 }
 
 .chanel-info .subscribe {
-  background-color: red;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  font-size: 14px;
-  height: 40px;
-  width: 159px;
-  border: none;
-  text-align: center;
-  justify-content: center; /* centraliza horizontal */
-  align-items: center;     /* centraliza vertical */
-  padding: 12px 24px;
-  margin-left: 10px;
-  border-radius: 5px;
-  cursor: pointer;
+background-color: red;
+font-family: 'Roboto', sans-serif;
+color: white;
+font-size: 14px;
+height: 40px;
+width: 159px;
+border: none;
+text-align: center;
+justify-content: center; /* centraliza horizontal /
+align-items: center;     / centraliza vertical */
+padding: 12px 24px;
+margin-left: 10px;
+border-radius: 5px;
+cursor: pointer;
 }
 
 .botoes {
-    display: flex;       /* deixa os botões lado a lado */
-    gap: 10px;           /* espaçamento entre eles */
+display: flex;       
+gap: 10px;           
 }
 
 .like-button, .deslike-button, .share-button, .download-button {
-    display: flex;          /* coloca imagem e texto lado a lado */
-    align-items: center;    /* centraliza verticalmente */
-    gap: 5px;               /* espaçamento entre imagem e texto */
-    padding: 5px 10px;      /* espaço interno do botão */
-    border: none;           /* remove a borda padrão */
-    background-color: #FFF; /* cor de fundo do botão */
-    cursor: pointer;        /* muda o cursor ao passar por cima */
+display: flex;          
+align-items: center;    
+gap: 5px;               
+padding: 5px 10px;      
+border: none;           
+background-color: #FFF; 
+cursor: pointer;         
 }
 
 .botoes .info {
-    margin: 0;              /* remove margem padrão do <p> */
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;       /* SemiBold */
-    font-style: normal;     /* não existe 'SemiBold' aqui */
-    font-size: 14px;
-    line-height: 1;         /* equivalente a 100% */
-    letter-spacing: 0;
+margin: 0;              
+font-family: 'Roboto', sans-serif;
+font-weight: 500;       
+font-size: 14px;
+line-height: 1;         
 }
 
 .info-video {
-  font-size: 14px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+font-size: 14px;
+font-family: 'Roboto', sans-serif;
+font-weight: 600;
+margin-top: 10px;
 }
 
 .descricao-video {
-  width: 50%;
+width: 50%;
 }
 
 .descricao-video p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #515151;
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+font-weight: 400;
+color: #515151;
+}
+
+.videos-relacionados {
+width: 300px;  
+position: fixed;
+top: 80px;       
+right: 20px;     
+z-index: 1000;   
+}
+.video > a {
+display: flex;
+align-items: flex-start;
+gap: 10px; 
+color: black;
+text-decoration: none;
+margin-bottom: 15px; 
+}
+.video img {
+width: 120px; 
+flex-shrink: 0; 
+border-radius: 4px; 
+}
+.descricao {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.video .titulo {
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+font-weight: 600;
+margin: 0 0 5px 0;
+}
+.video .detalhe {
+font-family: 'Roboto', sans-serif;
+color: #515151;
+font-size: 12px;
+font-weight: 400;
+margin: 0;
 }
